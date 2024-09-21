@@ -16,7 +16,7 @@ int main() {
             isPrime[j] = false;
     }
 
-    isPrime[1] = false;
+    //isPrime[1] = false;
     for(int i = a; i <= b; ++i)
         if(isPrime[i]) ++answer;
     cout << answer;
