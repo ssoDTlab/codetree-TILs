@@ -10,7 +10,7 @@ bool isIn369(int n)
 }
 bool isMasicNumber(int n)
 {
-    return n % 3 == 0 || isIn369(n);
+    return (n % 3 == 0) || isIn369(n);
 }
 int main() {
     // 여기에 코드를 작성해주세요.
