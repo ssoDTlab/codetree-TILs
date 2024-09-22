@@ -3,11 +3,11 @@ using namespace std;
 
 int gcd(int n,int m)
 {
-    int ret = 1;
-    for(int i = 2; i <= min(n,m); ++i)
+    int ret = 0;
+    for(int i = 1; i <= min(n,m); ++i)
     {
         if(n % i == 0 && m % i == 0)
-            ret *= i;
+            ret = i;
     }
     return ret;
 }
