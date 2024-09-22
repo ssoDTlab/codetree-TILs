@@ -17,6 +17,6 @@ int main() {
     
     int gcd = findGCD(n,m);
 
-    cout << gcd * (n / gcd) * (m / gcd);
+    cout << n * m / gcd;
     return 0;
 }
