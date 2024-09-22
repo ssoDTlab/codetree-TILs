@@ -3,10 +3,12 @@ using namespace std;
 
 bool isIn369(int n)
 {
-    int a,b;
-    a = n / 10;
-    b = n % 10;
-    return a == 3 || a == 6 || a == 9 || b == 3 ||  b == 6 || b == 9;
+    while(n)
+    {
+        if(n % 10 == 3 || n % 10 == 6 || n % 10 == 9) return true;
+        n /= 10;
+    }
+    return false;
 }
 bool isMasicNumber(int n)
 {
